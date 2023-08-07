@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  --main-color: #e07420;
+}
+/* Header ile ilgili css kodları */
+header {
+  width: 100%;
+  height: 100vh;
+  background: url(/images/code-background.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-color: rgba(233, 2, 2, 0.509);
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(112, 102, 102, 0.4);
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo p {
+  display: inline-block;
+  color: white;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-left: 5px;
+}
+.logo p span {
+  font-weight: 200;
+  color: var(--main-color);
+  margin-right: -1px;
+}
+
+.navbar li {
+  list-style: none;
+  display: inline-block;
+}
+.navbar li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px;
+  font-weight: 200;
+}
+.navbar li a:hover {
+  border-bottom: 2px solid #8f4a15;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  color: white;
+  font-size: 2rem;
+  font-weight: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner h3 {
+  font-weight: 300;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.center {
+  width: 50%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.main-button {
+  background-color: var(--main-color);
+  border: 0;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  color: white;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.center button:hover {
+  background-color: #b05c1d;
+}
+/* main ile ilgili css kodları */
+
+main,
+main section {
+  width: 100%;
+}
+
+/* development section ile ilgili css kodları */
+
+#development {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+.item {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.item i {
+  background-color: var(--main-color);
+  border-radius: 100%;
+  padding: 15px;
+}
+.item h4,
+p {
+  margin-top: 10px;
+}
+
+/* working section ile ilgili css kodları */
+.imagebox {
+  display: flex;
+  flex-direction: row;
+  height: 50vh;
+}
+
+.banner-image {
+  width: 50%;
+  height: 100%;
+}
+.banner-image img {
+  width: 100%;
+  height: 100%;
+}
+.banner-contant {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-color);
+  justify-content: center;
+  padding: 3%;
+}
+.banner-contant h1 {
+  color: aliceblue;
+  font-size: 2.5rem;
+  font-weight: 200;
+}
+.banner-contant p {
+  color: aliceblue;
+  font-size: 1.3rem;
+  font-weight: 200;
+}
+.banner-contant .main-button {
+  border: white solid 1px;
+}
+
+.banner-contant button:hover {
+  background-color: #8f4a15;
+}
+/* gallery section için css kodları */
+
+.gallerybox {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+}
+.head-text {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  text-align: center;
+  font-weight: 300;
+}
+.head-text h2 {
+  font-weight: 150;
+  font-size: 2rem;
+}
+.wrap-images {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.images {
+  width: 24%;
+  height: auto;
+  margin-left: 0.5%;
+  margin-top: 0.5%;
+}
+.wrap-images .images img {
+  width: 100%;
+  height: 100%;
+}
+
+/* blog section css kodları */
+
+.blog-contant {
+  width: 50%;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  font-weight: 200;
+  background-color: rgb(174, 194, 62);
+}
+.blog-contant h1 {
+  font-weight: 200;
+}
+
+.blog-image {
+  width: 50%;
+}
+.blog-image img {
+  width: 100%;
+  height: 100%;
+}
+.blog-contant .main-button {
+  background: none;
+  border: white solid 1px;
+}
+
+/* team seciton için css kodları */
+
+.team{
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 3%;
+}
+.team img{
+  border-radius: 50%;
+}
+
+.wrap-images .images h4 {
+  font-weight: 200;
+  margin: 3%;
+}
+.wrap-images .images h3 {
+  font-weight: 400;
+}
+
+/* contact banner için css kodları */
+
+#callback-banner {
+  background-color: rgba(220, 220, 220, 0.56);
+}
+
+#callback-banner h2 {
+  color: rgba(0, 0, 0, 0.817);
+  margin-bottom: 20px;
+  font-weight: 100;
+  font-size: 2rem;
+}
+#callback-banner input {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  padding: 10px;
+  border: none;
+  font-weight: 200;
+}
+#callback-button {
+  width: 100%;
+  font-size: 1.3rem;
+  height: auto;
+  padding: 5px 0 5px 5px;
+}
+/* footer için css kodları */
+
+footer {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.803);
+  color: white;
+}
+.footer-icons {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
